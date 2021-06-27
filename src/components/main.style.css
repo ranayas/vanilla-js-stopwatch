@@ -1,0 +1,83 @@
+:root {
+  --stopwatch-font-size: 4rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stopwatch {
+  display: flex;
+  justify-content: center;
+  font-size: var(--stopwatch-font-size);
+  font-family: "Share Tech Mono", monospace;
+  padding: 3.2rem 0 1.6rem;
+  flex-wrap: wrap;
+}
+
+.stopwatch__time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stopwatch__miliseconds::first-letter {
+  font-size: var(--stopwatch-font-size);
+}
+
+.stopwatch__miliseconds {
+  font-size: calc(var(--stopwatch-font-size) * 3 / 5);
+}
+
+.stopwatch__time-abbr {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.button {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+  border: 0 solid;
+  background-color: #f4817b;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+  font-family: "Share Tech Mono", monospace;
+  cursor: pointer;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  padding: 1.6rem 0;
+}
+
+.buttons-grid {
+  display: inline-grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.6rem;
+}
+
+.table-container {
+  padding: 1.6rem 0;
+}
+
+.table {
+  font-family: "Share Tech Mono", monospace;
+  font-size: 2.4rem;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+.table__row {
+  border-bottom: 0.1rem solid #f4817b;
+}
+
+.table__data {
+  padding: 1.6rem 1.6rem 0;
+}
